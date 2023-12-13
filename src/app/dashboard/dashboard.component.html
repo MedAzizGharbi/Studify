@@ -1,0 +1,15 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+<div class="dashboard-container">
+    <div class="timer-display">
+        <h1>Study Timer</h1>
+        <div class="timer"><h3>{{ minutes }}:{{ seconds | number: '2.0' }}</h3></div>
+        <div class="controls">
+          <button (click)="startTimer()" [disabled]="timerRunning">Start</button>
+          <button (click)="pauseTimer()" [disabled]="!timerRunning">Pause</button>
+          <button (click)="resetTimer()">Reset</button>
+        </div>
+    </div>
+  </div>
+  
