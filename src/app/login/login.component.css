@@ -1,0 +1,13 @@
+.login-container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(https://files.123freevectors.com/wp-content/original/130977-blue-and-white-polygon-pattern-background-vector-art.jpg);
+}
+#login-form > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
